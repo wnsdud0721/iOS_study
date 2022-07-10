@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10A40E0E287B03F0001AD528 /* light-bulb-on-off2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 10A40E0C287B03F0001AD528 /* light-bulb-on-off2.jpeg */; };
+		10A40E0F287B03F0001AD528 /* light-bulb-on-off.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 10A40E0D287B03F0001AD528 /* light-bulb-on-off.jpeg */; };
 		10A50726287739AA005BA04B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A50725287739AA005BA04B /* AppDelegate.swift */; };
 		10A50728287739AA005BA04B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A50727287739AA005BA04B /* SceneDelegate.swift */; };
 		10A5072A287739AA005BA04B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A50729287739AA005BA04B /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10A40E0C287B03F0001AD528 /* light-bulb-on-off2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "light-bulb-on-off2.jpeg"; sourceTree = "<group>"; };
+		10A40E0D287B03F0001AD528 /* light-bulb-on-off.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "light-bulb-on-off.jpeg"; sourceTree = "<group>"; };
 		10A50722287739AA005BA04B /* ImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10A50725287739AA005BA04B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10A50727287739AA005BA04B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 		10A50724287739AA005BA04B /* ImageView */ = {
 			isa = PBXGroup;
 			children = (
+				10A40E0D287B03F0001AD528 /* light-bulb-on-off.jpeg */,
+				10A40E0C287B03F0001AD528 /* light-bulb-on-off2.jpeg */,
 				10A50725287739AA005BA04B /* AppDelegate.swift */,
 				10A50727287739AA005BA04B /* SceneDelegate.swift */,
 				10A50729287739AA005BA04B /* ViewController.swift */,
@@ -126,6 +132,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				10A50732287739AA005BA04B /* LaunchScreen.storyboard in Resources */,
+				10A40E0E287B03F0001AD528 /* light-bulb-on-off2.jpeg in Resources */,
+				10A40E0F287B03F0001AD528 /* light-bulb-on-off.jpeg in Resources */,
 				10A5072F287739AA005BA04B /* Assets.xcassets in Resources */,
 				10A5072D287739AA005BA04B /* Main.storyboard in Resources */,
 			);
