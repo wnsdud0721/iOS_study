@@ -15,6 +15,12 @@
 		10A5072D287739AA005BA04B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10A5072B287739AA005BA04B /* Main.storyboard */; };
 		10A5072F287739AA005BA04B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10A5072E287739AA005BA04B /* Assets.xcassets */; };
 		10A50732287739AA005BA04B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10A50730287739AA005BA04B /* LaunchScreen.storyboard */; };
+		10BE058C287E8EE200576417 /* thumbnail.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 10BE058B287E8EE200576417 /* thumbnail.jpeg */; };
+		10BE058E287E91D300576417 /* thumbnail2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 10BE058D287E91D300576417 /* thumbnail2.jpeg */; };
+		10BE0590287E924F00576417 /* asdfg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10BE058F287E924F00576417 /* asdfg.jpg */; };
+		10BE0592287E934400576417 /* qwer.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 10BE0591287E934400576417 /* qwer.jpeg */; };
+		10BE0594287E938B00576417 /* tall.webp in Resources */ = {isa = PBXBuildFile; fileRef = 10BE0593287E938B00576417 /* tall.webp */; };
+		10BE0596287E957500576417 /* zxcv.webp in Resources */ = {isa = PBXBuildFile; fileRef = 10BE0595287E957400576417 /* zxcv.webp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,12 @@
 		10A5072E287739AA005BA04B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10A50731287739AA005BA04B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10A50733287739AA005BA04B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10BE058B287E8EE200576417 /* thumbnail.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumbnail.jpeg; sourceTree = "<group>"; };
+		10BE058D287E91D300576417 /* thumbnail2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumbnail2.jpeg; sourceTree = "<group>"; };
+		10BE058F287E924F00576417 /* asdfg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = asdfg.jpg; sourceTree = "<group>"; };
+		10BE0591287E934400576417 /* qwer.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = qwer.jpeg; sourceTree = "<group>"; };
+		10BE0593287E938B00576417 /* tall.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = tall.webp; sourceTree = "<group>"; };
+		10BE0595287E957400576417 /* zxcv.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = zxcv.webp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,12 @@
 		10A50724287739AA005BA04B /* ImageView */ = {
 			isa = PBXGroup;
 			children = (
+				10BE058B287E8EE200576417 /* thumbnail.jpeg */,
+				10BE0595287E957400576417 /* zxcv.webp */,
+				10BE0593287E938B00576417 /* tall.webp */,
+				10BE058D287E91D300576417 /* thumbnail2.jpeg */,
+				10BE0591287E934400576417 /* qwer.jpeg */,
+				10BE058F287E924F00576417 /* asdfg.jpg */,
 				10A40E0D287B03F0001AD528 /* light-bulb-on-off.jpeg */,
 				10A40E0C287B03F0001AD528 /* light-bulb-on-off2.jpeg */,
 				10A50725287739AA005BA04B /* AppDelegate.swift */,
@@ -131,9 +149,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10BE058C287E8EE200576417 /* thumbnail.jpeg in Resources */,
 				10A50732287739AA005BA04B /* LaunchScreen.storyboard in Resources */,
 				10A40E0E287B03F0001AD528 /* light-bulb-on-off2.jpeg in Resources */,
 				10A40E0F287B03F0001AD528 /* light-bulb-on-off.jpeg in Resources */,
+				10BE0594287E938B00576417 /* tall.webp in Resources */,
+				10BE058E287E91D300576417 /* thumbnail2.jpeg in Resources */,
+				10BE0592287E934400576417 /* qwer.jpeg in Resources */,
+				10BE0590287E924F00576417 /* asdfg.jpg in Resources */,
+				10BE0596287E957500576417 /* zxcv.webp in Resources */,
 				10A5072F287739AA005BA04B /* Assets.xcassets in Resources */,
 				10A5072D287739AA005BA04B /* Main.storyboard in Resources */,
 			);

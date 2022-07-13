@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        imgOn = UIImage(named: "light-bulb-on-off.jpeg")
+        imgOn = UIImage(named: "zxcv.webp")
         imgOff = UIImage(named: "light-bulb-on-off2.jpeg")
         
         imgView.image = imgOn
