@@ -9,12 +9,14 @@ import UIKit
 
 class ViewController: UIViewController, UIScrollViewDelegate {
     
-    @IBOutlet var scrollView: UIScrollView!
-    @IBOutlet var pageControl: UIPageControl!
+    // ScrollView
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var pageControl: UIPageControl!
     
-    var images = [UIImage(named: "bannerimg1.jpeg"), UIImage(named: "bannerimg2.png"), UIImage(named: "bannerimg3.png"), UIImage(named: "bannerimg4.jpeg")]
+    var images = [UIImage(named: "bannerimg1.jpeg")!, UIImage(named: "bannerimg2.png")!, UIImage(named: "bannerimg3.png")!, UIImage(named: "bannerimg4.jpeg")!]
     var imageViews = [UIImageView]()
     
+    // UICollectionView
     @IBOutlet var bannerCollectionView: UICollectionView!
     
     override func viewDidLoad() {
@@ -23,10 +25,44 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         
         bannerCollectionView.delegate = self
         bannerCollectionView.dataSource = self
-        
+
         bannerTimer()
+        
+        // 스크롤 뷰
+        scrollView.delegate = self
+        addContentScrollView()
+        setPageControl()
     }
     
+    // ScrollView 배너
+    private func addContentScrollView() {
+        
+        for i in 0..<images.count {
+            let imageView = UIImageView()
+            let xPos = self.view.frame.width * CGFloat(i)
+            imageView.frame = CGRect(x: xPos, y: 0, width: scrollView.bounds.width, height: scrollView.bounds.height)
+            imageView.image = images[i]
+            scrollView.addSubview(imageView)
+            scrollView.contentSize.width = imageView.frame.width * CGFloat(i + 1)
+        }
+    }
+    
+    private func setPageControl() {
+        pageControl.numberOfPages = images.count
+    }
+    
+    private func setPageControlSelectedPage(currentPage:Int) {
+        pageControl.currentPage = currentPage
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let value = scrollView.contentOffset.x/scrollView.frame.size.width
+        setPageControlSelectedPage(currentPage: Int(round(value)))
+    }
+    
+    
+    
+    // UICollectionView 배너
     // 현재페이지 체크 변수 (자동 스크롤 할 때 필요)
     var nowPage: Int = 0
     
