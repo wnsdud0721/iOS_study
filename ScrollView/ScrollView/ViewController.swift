@@ -7,41 +7,36 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
-    var img1: UIImage?
-    var img2: UIImage?
-    var img3: UIImage?
-
-    @IBOutlet var imgView1: UIImageView!
+    var thumbnail = [UIImage(named: "1"), UIImage(named: "2"), UIImage(named: "3"), UIImage(named: "4"),]
     
-    @IBOutlet var imgView2: UIImageView!
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return thumbnail.count
+    }
     
-    @IBOutlet var imgView3: UIImageView!
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+            as! MyCollectionCell
+        
+        cell.thumbNail.image = thumbnail[indexPath.row]
+        cell.thumbNail.layer.borderColor = UIColor.lightGray.cgColor
+        cell.thumbNail.layer.borderWidth = 0.5
+        cell.thumbNail.layer.cornerRadius = 10
+        
+        return cell
+        
+    }
+    
+    
+    //var thumbnail:[String] = ["poiu", "asdfg", "qwer", "thumbnail2"]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        img1 = UIImage(named: "poiu.png")
-        img2 = UIImage(named: "qwer.jpeg")
-        img3 = UIImage(named: "thumbnail2.jpeg")
-        
-        imgView1.image = img1
-        imgView2.image = img2
-        imgView3.image = img3
-        
-        imgView1.layer.borderColor = UIColor.lightGray.cgColor
-        imgView1.layer.borderWidth = 0.5
-        imgView1.layer.cornerRadius = 10
-        
-        imgView2.layer.borderColor = UIColor.lightGray.cgColor
-        imgView2.layer.borderWidth = 0.5
-        imgView2.layer.cornerRadius = 10
-        
-        imgView3.layer.borderColor = UIColor.lightGray.cgColor
-        imgView3.layer.borderWidth = 0.5
-        imgView3.layer.cornerRadius = 10
     }
 
 
