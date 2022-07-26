@@ -10,4 +10,5 @@ import UIKit
 class MyCollectionCell: UICollectionViewCell {
     @IBOutlet var thumbNail: UIImageView!
     
+    @IBOutlet var thumbNail2: UIImageView!
 }
