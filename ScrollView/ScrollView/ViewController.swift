@@ -13,6 +13,24 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     @IBOutlet var CollectionView2: UICollectionView!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        
+        
+        
+        CollectionView1.delegate = self
+        CollectionView1.dataSource = self
+        //CollectionView1.register(UICollectionView.self, forCellWithReuseIdentifier: "cell")
+        
+        CollectionView2.delegate = self
+        CollectionView2.dataSource = self
+        //CollectionView2.register(UICollectionView.self, forCellWithReuseIdentifier: "cell_second")
+        
+        
+        
+    }
+    
     // 오늘의 인기작
     var thumbnail = [UIImage(named: "asdfg.jpg"), UIImage(named: "2"), UIImage(named: "3"), UIImage(named: "4"), UIImage(named: "5")]
     
@@ -34,7 +52,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        if collectionView == CollectionView2 {
+        if collectionView == CollectionView1 {
             
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
                 as! MyCollectionCell
@@ -45,12 +63,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             cell.thumbNail.layer.cornerRadius = 10
             
             return cell
+
         }
         
         if collectionView == CollectionView2 {
             
             let cell_second = collectionView.dequeueReusableCell(withReuseIdentifier: "cell_second", for: indexPath)
-                as! MyCollectionCell
+                as! MyCollectionCell2
             
             cell_second.thumbNail2.image = thumbnail2[indexPath.row]
             cell_second.thumbNail2.layer.borderColor = UIColor.lightGray.cgColor
@@ -62,24 +81,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         return UICollectionViewCell()
 
-    }
-    
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-        CollectionView1.delegate = self
-        CollectionView1.dataSource = self
-        CollectionView1.register(UICollectionView.self, forCellWithReuseIdentifier: "cell")
-        
-        CollectionView2.delegate = self
-        CollectionView2.dataSource = self
-        CollectionView2.register(UICollectionView.self, forCellWithReuseIdentifier: "cell_second")
-        
-        
-        
     }
 
 
