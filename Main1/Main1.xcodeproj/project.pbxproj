@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		108AA7932893AD5100D42097 /* NanumSquareRoundR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 108AA78F2893AD5100D42097 /* NanumSquareRoundR.ttf */; };
+		108AA7942893AD5100D42097 /* NanumSquareRoundL.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 108AA7902893AD5100D42097 /* NanumSquareRoundL.ttf */; };
+		108AA7952893AD5100D42097 /* NanumSquareRoundEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 108AA7912893AD5100D42097 /* NanumSquareRoundEB.ttf */; };
+		108AA7962893AD5100D42097 /* NanumSquareRoundB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 108AA7922893AD5100D42097 /* NanumSquareRoundB.ttf */; };
 		10B5A3F228937A97003B64EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B5A3F128937A97003B64EC /* AppDelegate.swift */; };
 		10B5A3F428937A97003B64EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B5A3F328937A97003B64EC /* SceneDelegate.swift */; };
 		10B5A3F628937A97003B64EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B5A3F528937A97003B64EC /* ViewController.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		108AA78F2893AD5100D42097 /* NanumSquareRoundR.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRoundR.ttf; sourceTree = "<group>"; };
+		108AA7902893AD5100D42097 /* NanumSquareRoundL.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRoundL.ttf; sourceTree = "<group>"; };
+		108AA7912893AD5100D42097 /* NanumSquareRoundEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRoundEB.ttf; sourceTree = "<group>"; };
+		108AA7922893AD5100D42097 /* NanumSquareRoundB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRoundB.ttf; sourceTree = "<group>"; };
 		10B5A3EE28937A97003B64EC /* Main1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Main1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10B5A3F128937A97003B64EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10B5A3F328937A97003B64EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,9 +45,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		108AA78E2893AD4200D42097 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				108AA7922893AD5100D42097 /* NanumSquareRoundB.ttf */,
+				108AA7912893AD5100D42097 /* NanumSquareRoundEB.ttf */,
+				108AA7902893AD5100D42097 /* NanumSquareRoundL.ttf */,
+				108AA78F2893AD5100D42097 /* NanumSquareRoundR.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		10B5A3E528937A97003B64EC = {
 			isa = PBXGroup;
 			children = (
+				108AA78E2893AD4200D42097 /* Font */,
 				10B5A3F028937A97003B64EC /* Main1 */,
 				10B5A3EF28937A97003B64EC /* Products */,
 			);
@@ -126,8 +146,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				10B5A3FE28937A98003B64EC /* LaunchScreen.storyboard in Resources */,
+				108AA7952893AD5100D42097 /* NanumSquareRoundEB.ttf in Resources */,
+				108AA7962893AD5100D42097 /* NanumSquareRoundB.ttf in Resources */,
 				10B5A3FB28937A98003B64EC /* Assets.xcassets in Resources */,
 				10B5A3F928937A97003B64EC /* Main.storyboard in Resources */,
+				108AA7932893AD5100D42097 /* NanumSquareRoundR.ttf in Resources */,
+				108AA7942893AD5100D42097 /* NanumSquareRoundL.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
