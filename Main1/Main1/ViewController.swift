@@ -85,23 +85,23 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     let sectionInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 40)
     
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//
-//        if collectionView == CollectionView1 {
-//            let width = collectionView.frame.width
-//            let height = collectionView.frame.height
-//            let itemsPerRow: CGFloat = 4
-//            let widthPadding = sectionInsets.left * (itemsPerRow + 1)
-//            let itemsPerColumn: CGFloat = 3
-//            let heightPadding = sectionInsets.top * (itemsPerColumn + 1)
-//            let cellWidth = (width - widthPadding) / itemsPerRow
-//            let cellHeight = (height - heightPadding) / itemsPerColumn
-//
-//            return CGSize(width: cellWidth, height: cellHeight)
-//        }
-//        return CGSize(width: 285, height: 80)
-//    }
-//
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+
+        if collectionView == CollectionView1 {
+            let width = collectionView.frame.width
+            let height = collectionView.frame.height
+            let itemsPerRow: CGFloat = 4
+            let widthPadding = sectionInsets.left * (itemsPerRow + 1)
+            let itemsPerColumn: CGFloat = 4
+            let heightPadding = sectionInsets.top * (itemsPerColumn + 1)
+            let cellWidth = (width - widthPadding) / itemsPerRow
+            let cellHeight = (height - heightPadding) / itemsPerColumn
+
+            return CGSize(width: cellWidth, height: cellHeight)
+        }
+        return CGSize(width: 285, height: 80)
+    }
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         if collectionView == CollectionView1 {
@@ -145,9 +145,16 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
 //    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 //        if collectionView == CollectionView1 {
-//            return CGSize(width: 60, height: 80)
+//            return CGSize(width: 285, height: 80)
 //        }
 //        return CGSize()
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+//        if collectionView == CollectionView1 {
+//            return CGFloat(8)
+//        }
+//        return CGFloat()
 //    }
     
 }

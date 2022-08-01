@@ -229,13 +229,13 @@
                                                                     </constraints>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="전지적 독자 시점" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0O-gD-hwa">
-                                                                    <rect key="frame" x="93" y="16" width="105.5" height="49"/>
+                                                                    <rect key="frame" x="93" y="16" width="105.5" height="19.5"/>
                                                                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="16"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="★5.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPh-AN-TP1">
-                                                                    <rect key="frame" x="93" y="90" width="40.5" height="17"/>
+                                                                    <rect key="frame" x="93" y="60.5" width="40.5" height="17"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="17" id="FVN-Bp-YR0"/>
                                                                     </constraints>
@@ -244,19 +244,19 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="네이버웹툰" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wrp-63-H3h">
-                                                                    <rect key="frame" x="93" y="71.5" width="48" height="14"/>
+                                                                    <rect key="frame" x="93" y="42" width="48" height="14"/>
                                                                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="11"/>
                                                                     <color key="textColor" red="0.10980392156862745" green="0.81960784313725488" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="박용제" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgZ-W4-bxg">
-                                                                    <rect key="frame" x="160" y="71.5" width="29" height="14"/>
+                                                                    <rect key="frame" x="160" y="42" width="29" height="14"/>
                                                                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="11"/>
                                                                     <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⎮" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4x-0F-YsY">
-                                                                    <rect key="frame" x="146" y="69" width="9" height="17"/>
+                                                                    <rect key="frame" x="146" y="39.5" width="9" height="17"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                     <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -294,27 +294,25 @@
                                                             <constraints>
                                                                 <constraint firstItem="Y4x-0F-YsY" firstAttribute="leading" secondItem="Wrp-63-H3h" secondAttribute="trailing" constant="5" id="1DV-AF-oyt"/>
                                                                 <constraint firstItem="Q3t-p4-vLZ" firstAttribute="top" secondItem="Dq4-Gq-FUf" secondAttribute="bottom" constant="5" id="1k6-px-tfK"/>
+                                                                <constraint firstItem="GPh-AN-TP1" firstAttribute="leading" secondItem="Wrp-63-H3h" secondAttribute="leading" id="2Dt-1o-neq"/>
                                                                 <constraint firstItem="K0O-gD-hwa" firstAttribute="top" secondItem="eSX-hu-Erp" secondAttribute="top" constant="16" id="3Oj-XL-XFd"/>
                                                                 <constraint firstAttribute="trailing" secondItem="rgZ-W4-bxg" secondAttribute="trailing" constant="91" id="4eM-Gd-7Y9"/>
-                                                                <constraint firstItem="GPh-AN-TP1" firstAttribute="bottom" secondItem="KOz-SJ-xPU" secondAttribute="bottom" id="6HT-h4-xY2"/>
                                                                 <constraint firstAttribute="bottom" secondItem="Q3t-p4-vLZ" secondAttribute="bottom" constant="16" id="83S-1v-doz"/>
                                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GPh-AN-TP1" secondAttribute="trailing" constant="10" id="9vW-y8-09i"/>
                                                                 <constraint firstItem="GPh-AN-TP1" firstAttribute="top" secondItem="Wrp-63-H3h" secondAttribute="bottom" constant="4.5" id="Em6-Y2-c2U"/>
                                                                 <constraint firstItem="GPh-AN-TP1" firstAttribute="top" secondItem="Y4x-0F-YsY" secondAttribute="bottom" constant="4" id="J1G-bb-OIh"/>
-                                                                <constraint firstItem="K0O-gD-hwa" firstAttribute="leading" secondItem="KOz-SJ-xPU" secondAttribute="trailing" constant="11" id="Lh6-cK-XSU"/>
+                                                                <constraint firstItem="KOz-SJ-xPU" firstAttribute="top" secondItem="eSX-hu-Erp" secondAttribute="top" constant="16" id="K2U-Br-kmo"/>
                                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="K0O-gD-hwa" secondAttribute="trailing" constant="10" id="Mkw-Jg-Evw"/>
                                                                 <constraint firstItem="Y4x-0F-YsY" firstAttribute="top" secondItem="K0O-gD-hwa" secondAttribute="bottom" constant="4" id="Q3f-1J-9Ub"/>
                                                                 <constraint firstItem="rgZ-W4-bxg" firstAttribute="leading" secondItem="Y4x-0F-YsY" secondAttribute="trailing" constant="5" id="S4x-4D-bvE"/>
+                                                                <constraint firstItem="K0O-gD-hwa" firstAttribute="leading" secondItem="KOz-SJ-xPU" secondAttribute="trailing" constant="11" id="TNY-0b-6kt"/>
                                                                 <constraint firstItem="d7T-3D-vRg" firstAttribute="leading" secondItem="eSX-hu-Erp" secondAttribute="leading" constant="16" id="Urn-S8-BpL"/>
+                                                                <constraint firstItem="KOz-SJ-xPU" firstAttribute="leading" secondItem="eSX-hu-Erp" secondAttribute="leading" constant="16" id="WKS-ba-SdR"/>
                                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="d7T-3D-vRg" secondAttribute="trailing" constant="16" id="Xnn-Sb-DSW"/>
-                                                                <constraint firstItem="GPh-AN-TP1" firstAttribute="leading" secondItem="KOz-SJ-xPU" secondAttribute="trailing" constant="11" id="aAN-6o-OKW"/>
                                                                 <constraint firstItem="JLp-Ht-cpk" firstAttribute="leading" secondItem="eSX-hu-Erp" secondAttribute="leading" constant="16" id="bHG-Ae-dFB"/>
-                                                                <constraint firstItem="KOz-SJ-xPU" firstAttribute="top" secondItem="eSX-hu-Erp" secondAttribute="top" constant="16" id="bdo-aK-vA1"/>
                                                                 <constraint firstItem="Q3t-p4-vLZ" firstAttribute="leading" secondItem="JLp-Ht-cpk" secondAttribute="trailing" constant="5" id="hMw-z7-200"/>
-                                                                <constraint firstItem="Wrp-63-H3h" firstAttribute="leading" secondItem="KOz-SJ-xPU" secondAttribute="trailing" constant="11" id="hSy-aA-H52"/>
                                                                 <constraint firstAttribute="bottom" secondItem="JLp-Ht-cpk" secondAttribute="bottom" constant="16" id="her-TI-MNu"/>
-                                                                <constraint firstItem="d7T-3D-vRg" firstAttribute="top" secondItem="KOz-SJ-xPU" secondAttribute="bottom" constant="12" id="lVb-vr-Fdu"/>
-                                                                <constraint firstItem="KOz-SJ-xPU" firstAttribute="leading" secondItem="eSX-hu-Erp" secondAttribute="leading" constant="16" id="qFc-S5-ZBU"/>
+                                                                <constraint firstItem="d7T-3D-vRg" firstAttribute="top" secondItem="KOz-SJ-xPU" secondAttribute="bottom" constant="12" id="i9p-dS-SSj"/>
                                                                 <constraint firstItem="GPh-AN-TP1" firstAttribute="top" secondItem="rgZ-W4-bxg" secondAttribute="bottom" constant="4.5" id="sgZ-xQ-39R"/>
                                                                 <constraint firstItem="Dq4-Gq-FUf" firstAttribute="leading" secondItem="JLp-Ht-cpk" secondAttribute="trailing" constant="5" id="uzJ-7h-1bY"/>
                                                                 <constraint firstItem="Wrp-63-H3h" firstAttribute="top" secondItem="K0O-gD-hwa" secondAttribute="bottom" constant="6.5" id="vqE-2z-Ytl"/>
