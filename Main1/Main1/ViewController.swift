@@ -90,9 +90,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         if collectionView == CollectionView1 {
             let width = collectionView.frame.width
             let height = collectionView.frame.height
-            let itemsPerRow: CGFloat = 4
+            let itemsPerRow: CGFloat = 1.5
             let widthPadding = sectionInsets.left * (itemsPerRow + 1)
-            let itemsPerColumn: CGFloat = 4
+            let itemsPerColumn: CGFloat = 3.3
             let heightPadding = sectionInsets.top * (itemsPerColumn + 1)
             let cellWidth = (width - widthPadding) / itemsPerRow
             let cellHeight = (height - heightPadding) / itemsPerColumn

@@ -122,12 +122,13 @@
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B5P-hV-r8A">
                                                                     <rect key="frame" x="16" y="0.0" width="60" height="80"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="height" constant="80" id="BcI-Xn-q51"/>
-                                                                        <constraint firstAttribute="width" constant="60" id="aYE-oN-aGs"/>
+                                                                        <constraint firstAttribute="width" constant="60" id="BxQ-lB-8ri"/>
+                                                                        <constraint firstAttribute="height" constant="80" id="Vw3-LK-ics"/>
                                                                     </constraints>
                                                                 </imageView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NAf-hK-Icx">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NAf-hK-Icx">
                                                                     <rect key="frame" x="95" y="30" width="6" height="20"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="16"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -169,13 +170,10 @@
                                                                 </label>
                                                             </subviews>
                                                             <constraints>
-                                                                <constraint firstItem="NAf-hK-Icx" firstAttribute="leading" secondItem="B5P-hV-r8A" secondAttribute="trailing" constant="19" id="JFw-0A-AFH"/>
-                                                                <constraint firstAttribute="trailing" secondItem="B5P-hV-r8A" secondAttribute="trailing" constant="209" id="RrT-n5-CiM"/>
-                                                                <constraint firstItem="NAf-hK-Icx" firstAttribute="top" secondItem="YaO-Xm-qYF" secondAttribute="top" constant="30" id="d8a-8B-WRT"/>
-                                                                <constraint firstItem="B5P-hV-r8A" firstAttribute="leading" secondItem="YaO-Xm-qYF" secondAttribute="leading" constant="16" id="dRe-Md-s4O"/>
-                                                                <constraint firstAttribute="bottom" secondItem="B5P-hV-r8A" secondAttribute="bottom" id="daB-Tp-XWu"/>
-                                                                <constraint firstItem="B5P-hV-r8A" firstAttribute="top" secondItem="YaO-Xm-qYF" secondAttribute="top" id="fAw-VJ-liX"/>
-                                                                <constraint firstAttribute="bottom" secondItem="NAf-hK-Icx" secondAttribute="bottom" constant="30" id="rcC-3E-5RT"/>
+                                                                <constraint firstItem="B5P-hV-r8A" firstAttribute="leading" secondItem="YaO-Xm-qYF" secondAttribute="leading" constant="16" id="0l2-Ah-Uab"/>
+                                                                <constraint firstAttribute="bottom" secondItem="B5P-hV-r8A" secondAttribute="bottom" id="Dzo-J0-CPe"/>
+                                                                <constraint firstItem="B5P-hV-r8A" firstAttribute="centerY" secondItem="YaO-Xm-qYF" secondAttribute="centerY" id="aoC-Y1-1a0"/>
+                                                                <constraint firstItem="B5P-hV-r8A" firstAttribute="top" secondItem="YaO-Xm-qYF" secondAttribute="top" id="gnP-di-eMM"/>
                                                             </constraints>
                                                         </collectionViewCellContentView>
                                                         <size key="customSize" width="285" height="80"/>
