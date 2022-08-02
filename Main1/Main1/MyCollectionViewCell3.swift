@@ -27,13 +27,4 @@ class MyCollectionViewCell3: UICollectionViewCell {
         userRecommendImgScore.text = userrecommend.userRecommendScore
     }
     
-    
-    
-//    func update(info: ImageInfo) {
-//        userRecommendImg.image = info.image
-//        userRecommendImgName.text = info.Name
-//        userRecommendImgPlatform.text = info.Platform
-//        userRecommendImgWriter.text = info.Writer
-//        userRecommendImgScore.text = info.Score
-//    }
 }
