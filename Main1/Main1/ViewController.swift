@@ -7,26 +7,6 @@
 
 import UIKit
 
-// MARK: 메인화면 구조체
-// 유저를 위한 웹툰 추천
-//struct userRecommendInfo {
-//    let Name: String
-//    let Platform: String
-//    let Writer: String
-//    let Score: String
-//
-//    var image: UIImage? {
-//        return UIImage(named: "\(Name).jpeg")
-//    }
-//
-//    init (Name: String, Platform: String, Writer: String, Score: String) {
-//        self.Name = Name
-//        self.Platform = Platform
-//        self.Writer = Writer
-//        self.Score = Score
-//    }
-//
-//}
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
@@ -53,10 +33,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
     }
     
-    // let userRecommendModel = userRecommendImgModel
-    
-    // MARK: 유저들을 위한 추천
-//    var userRecommendImg = [UIImage(named: "윈드브레이커.jpeg"), UIImage(named: "화산귀환.jpeg"), UIImage(named: "투신전생기.jpeg"), UIImage(named: "장씨세가 호위무사.jpeg")]
     
     // MARK: 오늘의 리뷰
     var todayReview = [UIImage(named: "naver1.jpeg"), UIImage(named: "naver2.jpeg"), UIImage(named: "naver3.jpeg")]
@@ -99,7 +75,20 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 
             return CGSize(width: cellWidth, height: cellHeight)
         }
-        return CGSize(width: 285, height: 80)
+        
+        if collectionView == CollectionView3 {
+            let width = collectionView.frame.width
+            let height = collectionView.frame.height
+            let itemsPerRow: CGFloat = 6.5
+            let widthPadding = sectionInsets.left * (itemsPerRow + 1)
+            let itemsPerColumn: CGFloat = 1
+            let heightPadding = sectionInsets.top * (itemsPerColumn)
+            let cellWidth = (width - widthPadding) / itemsPerRow
+            let cellHeight = (height - heightPadding) / itemsPerColumn
+
+            return CGSize(width: cellWidth, height: cellHeight)
+        }
+        return CGSize(width: 0, height: 0)
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -143,36 +132,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         return UICollectionViewCell()
     }
     
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        if collectionView == CollectionView1 {
-//            return CGSize(width: 285, height: 80)
-//        }
-//        return CGSize()
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-//        if collectionView == CollectionView1 {
-//            return CGFloat(8)
-//        }
-//        return CGFloat()
-//    }
-    
 }
-
-// MARK: 유저를 위한 웹툰 추천 이미지 데이터 모델
-//class ImageViewModel {
-//    let userRecommendImgInfoList: [ImageInfo] = [
-//        userRecommendInfo(Name: "윈드브레이커", Platform: "네이버웹툰", Writer: "조용석", Score: "5.00"),
-//        userRecommendInfo(Name: "화산귀환", Platform: "네이버웹툰", Writer: "LICO", Score: "5.00"),
-//        userRecommendInfo(Name: "투신전생기", Platform: "네이버웹툰", Writer: "청담", Score: "5.00"),
-//        userRecommendInfo(Name: "장씨세가 호위무사", Platform: "네이버웹툰", Writer: "김인호/조형근", Score: "5.00")]
-//    var countOfUserRecommendImgList: Int {
-//        return userRecommendImgInfoList.count
-//    }
-//
-//    func userRecommendImgInfo(at index: Int) -> userRecommendInfo {
-//        return userRecommendImgInfoList[index]
-//    }
-//}
 
 
