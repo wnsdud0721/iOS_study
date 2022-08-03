@@ -392,7 +392,11 @@
                                                                     </constraints>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="전지적 독자 시점" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DCb-83-HTy">
-                                                                    <rect key="frame" x="16" y="147.5" width="105.5" height="19.5"/>
+                                                                    <rect key="frame" x="16" y="147.5" width="106" height="19.5"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="106" id="jVX-Nc-oXp"/>
+                                                                        <constraint firstAttribute="height" constant="19.5" id="vWB-JX-fA2"/>
+                                                                    </constraints>
                                                                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="16"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -464,7 +468,7 @@
                                                                 <constraint firstItem="HvE-wx-P4u" firstAttribute="leading" secondItem="eFf-JM-tpk" secondAttribute="trailing" constant="4" id="MjD-kP-pUn"/>
                                                                 <constraint firstItem="eFf-JM-tpk" firstAttribute="leading" secondItem="FHi-Da-oqn" secondAttribute="trailing" constant="4" id="TyD-xd-zxZ"/>
                                                                 <constraint firstAttribute="bottom" secondItem="eFf-JM-tpk" secondAttribute="bottom" constant="21.5" id="Z6G-ih-zSO"/>
-                                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="DCb-83-HTy" secondAttribute="trailing" id="dOo-dr-THG"/>
+                                                                <constraint firstAttribute="trailing" secondItem="DCb-83-HTy" secondAttribute="trailing" id="dOo-dr-THG"/>
                                                                 <constraint firstItem="eFf-JM-tpk" firstAttribute="centerY" secondItem="FHi-Da-oqn" secondAttribute="centerY" id="dYP-Jc-nNr"/>
                                                                 <constraint firstItem="SJk-wn-rHh" firstAttribute="top" secondItem="182-SY-iKN" secondAttribute="top" id="gHR-yY-hYq"/>
                                                                 <constraint firstItem="SJk-wn-rHh" firstAttribute="leading" secondItem="182-SY-iKN" secondAttribute="leading" constant="16" id="hET-oj-ige"/>

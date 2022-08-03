@@ -8,6 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource{
+    
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return webtoonlist.count
     }
@@ -25,14 +27,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         return cell
     }
     
-
-//    var listImage:[String] = ["naver12", "naver11", "naver10", "naver9", "naver8", "naver7", "naver6", "naver1"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
     }
-
+    
 
 }
 
