@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -42,17 +43,77 @@
                                                         <constraint firstAttribute="width" constant="106" id="z6w-87-Dtu"/>
                                                     </constraints>
                                                 </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Listbar" translatesAutoresizingMaskIntoConstraints="NO" id="pnz-LG-vY6">
+                                                    <rect key="frame" x="0.0" y="156" width="414" height="1"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelLabelLabelLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwN-Qe-fi2">
+                                                    <rect key="frame" x="138" y="0.0" width="142.5" height="19.5"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="네이버 웹툰" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUm-c7-9l7">
+                                                    <rect key="frame" x="138" y="28" width="60" height="16"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="13"/>
+                                                    <color key="textColor" red="0.10980392160000001" green="0.81960784310000001" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="|" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thL-qm-eEd">
+                                                    <rect key="frame" x="202" y="28" width="4" height="16"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="13"/>
+                                                    <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelLabelLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eBT-WE-xTm">
+                                                    <rect key="frame" x="210" y="28" width="87" height="16"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="13"/>
+                                                    <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oo2-It-M6S">
+                                                    <rect key="frame" x="138" y="52.5" width="13" height="13"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <imageReference key="image" image="star.fill" catalog="system" renderingMode="hierarchical">
+                                                        <hierarchicalColors>
+                                                            <color red="0.96470588239999999" green="0.78823529410000004" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color systemColor="secondaryLabelColor"/>
+                                                            <color systemColor="tertiaryLabelColor"/>
+                                                        </hierarchicalColors>
+                                                    </imageReference>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92K-a4-eWJ">
+                                                    <rect key="frame" x="154" y="52" width="29" height="16"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="13"/>
+                                                    <color key="textColor" red="0.96470588239999999" green="0.78823529410000004" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="JUm-c7-9l7" firstAttribute="leading" secondItem="5ah-Kc-GdB" secondAttribute="trailing" constant="16" id="0mo-6o-69d"/>
                                                 <constraint firstItem="5ah-Kc-GdB" firstAttribute="leading" secondItem="2Ny-b6-pRm" secondAttribute="leading" constant="16" id="4jB-tf-wtJ"/>
+                                                <constraint firstItem="thL-qm-eEd" firstAttribute="top" secondItem="gwN-Qe-fi2" secondAttribute="bottom" constant="8.5" id="9ta-iH-DM6"/>
+                                                <constraint firstItem="gwN-Qe-fi2" firstAttribute="leading" secondItem="5ah-Kc-GdB" secondAttribute="trailing" constant="16" id="I70-w5-sf6"/>
+                                                <constraint firstItem="thL-qm-eEd" firstAttribute="leading" secondItem="JUm-c7-9l7" secondAttribute="trailing" constant="4" id="MrW-vc-dw3"/>
                                                 <constraint firstAttribute="bottom" secondItem="5ah-Kc-GdB" secondAttribute="bottom" constant="17" id="VBr-KU-TKC"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eBT-WE-xTm" secondAttribute="trailing" constant="5" id="Yd5-oX-tye"/>
                                                 <constraint firstAttribute="trailing" secondItem="5ah-Kc-GdB" secondAttribute="trailing" constant="292" id="acq-VW-6HQ"/>
+                                                <constraint firstItem="gwN-Qe-fi2" firstAttribute="top" secondItem="2Ny-b6-pRm" secondAttribute="top" id="cab-eX-p2P"/>
                                                 <constraint firstItem="5ah-Kc-GdB" firstAttribute="top" secondItem="2Ny-b6-pRm" secondAttribute="top" id="ee6-de-CO0"/>
+                                                <constraint firstItem="JUm-c7-9l7" firstAttribute="top" secondItem="gwN-Qe-fi2" secondAttribute="bottom" constant="8.5" id="f8l-8h-5ni"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gwN-Qe-fi2" secondAttribute="trailing" constant="5" id="ge5-oH-ndo"/>
+                                                <constraint firstItem="eBT-WE-xTm" firstAttribute="top" secondItem="gwN-Qe-fi2" secondAttribute="bottom" constant="8.5" id="gqN-em-PQ3"/>
+                                                <constraint firstItem="eBT-WE-xTm" firstAttribute="leading" secondItem="thL-qm-eEd" secondAttribute="trailing" constant="4" id="hL6-ab-ucS"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="414" height="160"/>
                                         <connections>
                                             <outlet property="listImage" destination="5ah-Kc-GdB" id="zpn-aJ-7IK"/>
+                                            <outlet property="listPlatform" destination="JUm-c7-9l7" id="vDI-qY-h6P"/>
+                                            <outlet property="listScore" destination="92K-a4-eWJ" id="CCe-hT-mdb"/>
+                                            <outlet property="listTitle" destination="gwN-Qe-fi2" id="LIm-1X-gsz"/>
+                                            <outlet property="listWriter" destination="eBT-WE-xTm" id="Fhr-yA-FyB"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -72,8 +133,16 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Listbar" width="750" height="2"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

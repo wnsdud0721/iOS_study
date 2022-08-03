@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return listImage.count
+        return webtoonlist.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -17,7 +17,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
             as! MyCollectionViewCell
         
-        cell.listImage.image = UIImage(named: listImage[indexPath.row])
+        cell.setup(with: webtoonlist[indexPath.row])
+        cell.listImage.layer.borderColor = UIColor.lightGray.cgColor
         cell.listImage.layer.cornerRadius = 10
         cell.listImage.layer.borderWidth = 0.5
         
@@ -25,7 +26,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
 
-    var listImage:[String] = ["naver12", "naver11", "naver10", "naver9", "naver8", "naver7", "naver6", "naver1"]
+//    var listImage:[String] = ["naver12", "naver11", "naver10", "naver9", "naver8", "naver7", "naver6", "naver1"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
